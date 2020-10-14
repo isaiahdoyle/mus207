@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="soms.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="title">
+        <h4>Isaiah Doyle's Formal Reflection of</h5>
+        <hr class="header">
+        <h1>The Science of Musical Sound</h1>
+        <h2><em>- Revised Edition -</em></h2>
+        <h4>by John R. Pierce</h4>
+        <hr class="header">
+    </div>
+
+    <div id="content">
+        <div class="chapter" id="appendices-a-f">
+            <!-- Written 10/12/20 -->
+            <h2><em>Appendices A-F</em></h2>
+            <p class="query">
+                What was Music V and what was its purpose? (Appendix F)
+            </p>
+            <ul class="response">
+                <li>
+                    Music V was a program written by Max Mathews in the late 60s as part of 
+                    his own MUSIC-N family of software. Music V allowed for the digital 
+                    synthesis of computer music -- <em>mostly sound</em> -- and brought 
+                    new potential into the hands of creators and thinkers alike. The program 
+                    itsel simulated a set of audio hardware: oscillators, adders, multipliers, 
+                    and all the fancy bells and whistles that previously took plenty of time, 
+                    money, and space to operate. Using the neatness of digital software, 
+                    Mathews revolutionized music production into a completely new era.
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/watch?v=ZFUVR-clo8g" target="_blank">Here
+                    </a> is a song produced by Mathews shortly after the release of MUSIC III. 
+                    Its uneasy nature is indeed just in time for Hallowe'en, and it still 
+                    stands in the foundations of digital sound, music, and speech synthesis of 
+                    today.
+                </li>
+            </ul>
+
+            <p class="query">
+                Why are the waves in figure E-4 moving in contrary motions to waves traveling 
+                along a string?
+            </p>
+            <ul class="response">
+                <li>
+                    In Fig. E-4 of (p.p. 237) a wave is illustrated traveling along both an 
+                    open pipe and a pipe with a closed end. This seems to be in disagreement 
+                    with what we understand about waves on strings; that is, the wave travels 
+                    back along the string reflected when the wave reaches a fixed point. In 
+                    air, however, this diagram seems to depict waves reflecting once in 
+                    contact with an open surface. In other words, why do waves behave so 
+                    different from waves on a string?
+                </li>
+            </ul>
+            <p class="discussion">
+                In Appendix F (p.p. 240-241), interpretation of binary digits is briefly 
+                mentioned and caught my attention. Though this discussion dives further into 
+                computer language rather than the direct generation of sound, I believe proper 
+                definitions are equally as important in terms of understanding the subject 
+                matter to the best of our ability. In paragraph one of page 241, Pierce claims 
+                that 65 536 different sample amplitudes are possible due to our maximum of 16 
+                binary digits in computer sounds. In reality, the binary result of 
+                '1111111111111111' is actually 65 535. Small mishap, but I believe it 
+                deserves a just correction.
+            </p>
+
+            <img src="binary.png" alt="" id="binary">
+
+            <p class="discussion">
+                    Okay edit: a quick review of this blurb made me realize that I am indeed a 
+                    fool who has seemingly forgotten of the existence of zero. So, including 0 
+                    there is in fact 65 536 different possibilities for sample amplitude but I did 
+                    a bit of work for this discussion so I'm still going to keep this here... :^(
+            </p>
+
+            <p class="sources">
+                Sources: 
+                <a href="http://www.csounds.com/mathews/max_bios.html" target="_blank">
+                    cSounds.com
+                </a>
+                , 
+                <a href="https://www.goodreads.com/book/show/4455826-the-science-of-musical-sound"
+                    target="_blank">
+                    The Science of Musical Sound, John R. Pierce
+                </a>
+            </p>
+        </div>
+
+        <hr class="chapter-break">
+
+        <div class="chapter" id="chapter-four">
+            <!-- Written 10/05/20 -->
+            <h2><em>Chapter Four: Scales and Beats</em></h2>
+            <p class="query">
+                How much is a cent in terms of frequency relation to intervals?
+            </p>
+            <ul class="response">
+                <li>
+                    A cent is exactly 1/1200th of an octave, which, in our modern twelve tone 
+                    equal-tempered system, is 1/100th of a semitone. The ratio of one semitone 
+                    is approximately 2 to the 1/1200th power. For example, if we use middle C 
+                    (261.6256 Hz) as our base note (where C is 1.0), a semitone above middle C 
+                    would be equivalent to 2 to the 1/12th power (taking the 1/1200th power of 
+                    two to get one cent, then taking the 100th power of the cent to reach out 
+                    semitone). In summary, where C is 1.0, C# is 1.059643. When we multiply 
+                    the frequency of C by this ratio, we get the frequency of the neighbouring 
+                    C#, 277.1826677 Hz.
+                </li>
+            </ul>
+
+            <p class="query">
+                Describe the reason and differences behind the Pythagorean and Just tuning 
+                temperaments.
+            </p>
+            <ul class="response">
+                <li>
+                    The chapter briefly recognizes two different tuning temperaments and the 
+                    quantitative differences between them. What is the point of 
+                    <em>Pythagorean</em> and <em>Just temperaments</em> and how may they prove 
+                    useful under today's popular musical structure?
+                </li>
+            </ul>
+            <p class="discussion">
+                The unsheathed relationship between frequency ratios and their position in 
+                music we digest daily is fascinating. The pulse that formulates from the 
+                inconsistent sum of two waves slightly out of phase is a phenomenon I've 
+                always been aware of but never paid close attention to. This idea drove me to
+                experiment in a free digital Eurorack simulator 
+                <a href="https://vcvrack.com/"><em>VCV Rack.</em></a>
+            </p>
+
+            <img src="phase_cancellation.png" alt="" id="phase-cancellation">
+
+            <p class="discussion">
+                I made an extremely quick rack consisting of two oscillators, the left 
+                oscillating at 261.63 Hz (middle C) and the right at just 260.63 Hz. I 
+                connected the left and right oscillators through their own respective 
+                amplifiers and to the left and right speakers respectively. I was unsure as to 
+                what kind of effect one Hertz would have on the system, but I was pleasantly 
+                surprised to hear the pulsing was more than noticeable. I could immediately 
+                hear the slight difference in phase causing the waves in air to periodically 
+                cancel and thus reduce in amplitude greatly. I had never fully researched this 
+                phemonenon extensively, so I came out with a new understanding of the 
+                importance of phase, and more importantly, how pianos are tuned.
+            </p>
+
+            <div class="quote">
+                <hr>
+                <p>
+                    Fun Fact: <br>
+                    Johann Sebastian Bach was one of the first people to show extended support 
+                    to the twelve tone equal-tempered tuning system for its flexbility to be 
+                    used similarly in all twelve keys, despite slight errors in the 
+                    frequencies themselves.
+                </p>
+                <hr>
+            </div>
+            <p class="sources">
+                Sources: 
+                <a href="https://www.goodreads.com/book/show/4455826-the-science-of-musical-sound"
+                    target="_blank">
+                    The Science of Musical Sound, John R. Pierce
+                </a>
+            </p>
+        </div>
+
+        <hr class="chapter-break">
+
+        <div class="chapter" id="chapter-three">
+            <!-- Written 09/27/20 -->
+            <h2><em>Chapter Three: Sine Waves and Resonance</em></h2>
+            <p class="query">
+                Describe the relationship between a sound's band width and duration.
+            </p>
+            <ul class="response">
+                <li>
+                    The duration of a sound is inversely proportional to the range of 
+                    frequencies (or band) of said sound. When we compare a bass drum to the 
+                    closing of a hi-hat, the bass drum sustains for a longer duration than the 
+                    hi hat and has a shorter range (band) of stronger frequencies. The hi-hat, 
+                    on the other hand, would be much shorter in duration comapred to the bass 
+                    drum, but the range of frequencies (the band) would be wider.
+                </li>
+            </ul>
+
+            <p class="query">
+                What is the difference between sound and noise?
+            </p>
+            <ul class="response">
+                <li>
+                    Throughout the book and this chapter particularly, Pierce refers to the 
+                    comparison of noise and sound quite often. There seems to be some 
+                    distinction between thr two, but I don't believe it is ever described.
+                </li>
+            </ul>
+            <p class="discussion">
+                This was a peculiar chapter. Sine waves and their respective partials aren't 
+                entirely new to me. but the direct proportionality of so many topics is 
+                mindd-blowing. Helmholtz' resonators are truly interesting contraptions and it 
+                feels great being able to completely dive into such a topic. The concept of 
+                ranges of frequencies had always been such a convoluted subject for me, but in 
+                this chapter I was able to take a step back and relearn the concept from the 
+                beginning. Great stuff.
+            </p>
+
+            <div class="quote">
+                <hr>
+                <p>
+                    "Quotes are for dumb people who can't think of something intelligent to 
+                    say on their own."
+                </p>
+                <hr>
+                <p class="quote-author">
+                    -Bo Burnham
+                </p>
+            </div>
+            <p class="sources">
+                Sources: 
+                <a href="https://www.goodreads.com/book/show/4455826-the-science-of-musical-sound"
+                    target="_blank">
+                    The Science of Musical Sound, John R. Pierce
+                </a>
+            </p>
+        </div>
+
+        <hr class="chapter-break">
+
+        <div class="chapter" id="chapter-two">
+            <!-- Written 09/22/20 -->
+            <h2><em>Chapter Two: Periodicity, Pitch, and Waves</em></h2>
+            <p class="query">
+                How do echoes of non-periodic sounds produce an audible pitch under specific 
+                cicrumstances?
+            </p>
+            <ul class="response">
+                <li>
+                    A non-periodic sound, such as a clap or a cymbal crash, has no discernible 
+                    pitch by itself. When producing these sounds in a solid corridor however, 
+                    as sound travels through the air and reflects off the walls into your ears 
+                    at an extreme pace, a noticeable pitch becomes apparent. This is due to the
+                    frequency of disturbances in air making a simulation of what we know as 
+                    sound.
+                     
+                </li>
+            </ul>
+
+            <p class="query">
+                What is the <strong>mel</strong> scale?
+            </p>
+            <ul class="response">
+                <li>
+                    In <em>A Note on Musical Pitch</em> (p.p. 36-37), Pierce mentions briefly 
+                    an experiment that was conducted on a group of subjects with no preceding 
+                    musical training. What psychologists found was a relationship between the 
+                    frequencies presented to the listeners and their response in what we know 
+                    as <em>mels.</em> So what is a mel? How is it related to frequency?
+                </li>
+            </ul>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Mel-Hz_plot.svg/1024px-Mel-Hz_plot.svg.png"
+            alt="A graph depicting a slope based on increasing mels (y-axis) over Hz (x-axis)." id="mels" />
+
+            <p class="discussion">
+                I found deriving the mathematical formulas for frequency in a multitude of 
+                situations to be extremely beneficial to my understanding of the subject. The 
+                ability to clearly declare how changes in mass, length, and more relate 
+                proportionally to changes in frequency was especially useful. I prefer being 
+                able to define in literal terms a difficult-to-understand concept before 
+                conceptualizing it figuratively in my head. It was a wonderful help in taking 
+                my knowledge to the next level.
+            </p>
+
+            <div class="quote">
+                <hr>
+                <p>
+                    "The only mistake we can make in 'confusing' pitch, a sensation, with 
+                    periodicity, the numerical frquency of the fundamental, is that of 
+                    offending psychologists."
+                </p>
+                <hr>
+                <p class="quote-author">
+                    -John R. Pierce
+                </p>
+            </div>
+            <p class="sources">
+                Sources: 
+                <a href="https://www.goodreads.com/book/show/4455826-the-science-of-musical-sound"
+                    target="_blank">
+                    The Science of Musical Sound, John R. Pierce
+                </a>
+            </p>
+        </div>
+
+        <hr class="chapter-break">
+
+        <div class="chapter" id="chapter-one">
+            <!-- Written 09/12/20 -->
+            <h2><em>Chapter One: Sound, Music, and Computers</em></h2>
+            <p class="query">
+                Who invented the first instance of what has been dubbed "the first 
+                commercial analog synthesizer," and why was it so influential?
+            </p>
+            <ul class="response">
+                <li>
+                    Robert Moog invented what was coined as the Moog Synthesizer which 
+                    was a modular synth rack that, for the first time, was able to be 
+                    controlled using an electric piano keyboard rather than a set of 
+                    punchcards, which were used by previous synths. 
+                </li>
+                <li>
+                    Two more reasons the Moog was so beloved was the fact that it was much 
+                    more compact than other synths, which often spanned the size of entire 
+                    rooms. The cost, on the other hand, only came at a measly price of 
+                    $10 000. Okay, it may have still been up there, but it was a much 
+                    preferable alternative to previous synthesizers coming out with a 
+                    price of at least six figures.
+                </li>
+                <li>
+                    With a much easier access to modular synth technology new bright minds 
+                    were given the opportunity to experiment and create with easy access 
+                    to a distinct aritificial timbre that had never been heard by such a 
+                    wide audience, thus changing the realm of musical possibilty forever.
+                </li>
+            </ul>
+
+            <p class="query">
+                What does the figure taken from Krzysztof Penderecki's Polymorphia depict? 
+                Is there any rational explanation to the series of lines and scribbles 
+                strewn about the page? Was Pendercki a genius with a new mean of musical 
+                notation, or have I been fooled?
+            </p>
+            <img src="https://i.pinimg.com/originals/ef/54/de/ef54de439fa61e6ab8c4d5289f170553.jpg" 
+                 alt="Sheet music from Krzysztof Penderecki's 'Polymorphia'" id="polymorphia">
+            <p class="discussion">
+                The work of Robert Moog and his analog synths truly is fascinating. Of course, 
+                many of the sounds that makes the Moog so iconic is quite easily replicated 
+                through the means of a more digital interface. However to this day, the Moog 
+                remains as a testament to the beauty of analog synthesizers. Everything from 
+                the aesthetic of the machine to the so-natural-yet-so-mechanical sound is 
+                mesmerizing. A man named Mort Garson was a Canadian musician who had 
+                discovered the Moog in 1967, three years after its initial unveiling. After 
+                Garson's initial encounter, he began writing for and on the Moog and never 
+                looked back. His most well-renowned album titled Mother Earth's Plantasia was, 
+                at the time, undiscovered and lost to history until just recently as a Sacred 
+                Bones Records began reissuing the album in 2019. Garson was a musical genius, 
+                though like many others, time swept him under the rug. Fortunately, however, 
+                his music has eventually been given the recognition it deserves, enlightening 
+                the lives of humans and plants alike.
+            </p>
+
+            <div class="quote">
+                <hr>
+                <p>
+                    “[My dad] would be fascinated by the fact that people are finally understanding 
+                    and appreciating this part of his musical career that he got no admiration for 
+                    back then.” 
+                </p>
+                <hr>
+                <p class="quote-author">
+                    -Day Darnet
+                </p>
+            </div>
+            <p class="sources">
+                Sources: 
+                <a href="https://www.sacredbonesrecords.com/products/sbr3030-mort-garson-mother-earths-plantasia" 
+                    target="_blank">
+                    Sacred Bones Records
+                </a>
+                ,  
+                <a href="https://www.goodreads.com/book/show/4455826-the-science-of-musical-sound"
+                    target="_blank">
+                    The Science of Musical Sound, John R. Pierce
+                </a>
+            </p>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,110 @@
+body {
+    padding-bottom: 4rem;
+}
+
+em {
+    margin: 0;
+}
+
+
+/* TITLE MODIFICATION */
+#title {
+    margin: 4rem 0;
+}
+
+#title * {
+    margin: 0.5rem auto;
+    text-align: center;
+}
+
+#title hr {
+    width: 40%;
+}
+/* TITLE MODIFICATION */
+
+
+/* Q/A MODIFICATION */
+#content {
+    margin: 0 2rem;
+    width: 80%;
+}
+
+.query {
+    border-left: 0.2rem solid black;
+    padding-left: 0.8rem;
+    width: 80%;
+    font-size: 1.2rem;
+    font-style: italic;
+}
+
+.response {
+    padding-left: 4rem;
+}
+/* Q/A MODIFICATION */
+
+
+/* QUOTE MODIFICATION */
+.quote {
+    margin: 2rem auto;
+    width: 64%;
+    text-align: center;
+    font-size: 1.4rem;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.quote-author {
+    font-weight: normal;
+    font-size: 1rem;
+}
+
+.quote hr {
+    width: 20%;
+    margin: 1rem auto;
+}
+/* QUOTE MODIFICATION */
+
+
+/* SOURCE MODIFICATION */
+.sources {
+    margin: 4rem 0 0 0;
+    text-align: right;
+    font-style: italic;
+    opacity: 0.5;
+    transition: 300ms;
+}
+
+.sources:hover {
+    opacity: 1;
+}
+/* SOURCE MODIFICATION */
+
+
+hr.chapter-break {
+    margin: 6rem 0;
+}
+
+.response li {
+    margin: 1rem 0;
+    width: 70%;
+}
+
+#polymorphia {
+    margin-left: 20%;
+    width: 40%;
+}
+
+#mels {
+    margin-left: 10%;
+    width: 55%;
+}
+
+#phase-cancellation {
+    margin-left: 20%;
+    width: 50%;
+}
+
+#binary {
+    margin-left: 4%;
+    width: 90%;
+}
