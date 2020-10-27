@@ -42,6 +42,16 @@ em {
 }
 /* Q/A MODIFICATION */
 
+/* EXCERPT MODIFICATION */
+.excerpt {
+    border-left: 0.1rem solid black;
+    padding-left: 0.4rem;
+    margin-left: 16rem;
+    width: 60%;
+    font-style: italic;
+}
+/* EXCERPT MODIFICATION */
+
 
 /* QUOTE MODIFICATION */
 .quote {
@@ -107,4 +117,9 @@ hr.chapter-break {
 #binary {
     margin-left: 4%;
     width: 90%;
+}
+
+#ear {
+    margin-left: 30%;
+    width: 40%;
 }
